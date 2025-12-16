@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lista de Presentes — [Nomes dos Noivos]</title>
+  <meta name="description" content="Lista de presentes para a lua de mel dos noivos." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Maripaulo &amp; Luciana</h1>
+      <p>Com carinho, criamos esta lista simbólica para nossa lua de mel. Fique à vontade para escolher.</p>
+    </header>
+
+    <section class="gift-grid">
+      <!-- Cada card representa um presente -->
+      <div class="gift-card">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Cota de lua de mel">
+        <div class="gift-content">
+          <div class="gift-title">Cota de Lua de Mel</div>
+          <div class="gift-price">R$ 100,00</div>
+          <button class="gift-btn open-qr">Presentear</button>
+        </div>
+      </div>
+
+      <div class="gift-card">
+        <img src="https://images.unsplash.com/photo-1698614082118-8e6eaecb08ef" alt="Jantar romântico">
+        <div class="gift-content">
+          <div class="gift-title">Jantar Romântico</div>
+          <div class="gift-price">R$ 250,00</div>
+          <button class="gift-btn open-qr">Presentear</button>
+        </div>
+      </div>
+
+      <div class="gift-card">
+        <img src="https://images.unsplash.com/photo-1628445537633-ba1b4a16899b" alt="Passeio de barco">
+        <div class="gift-content">
+          <div class="gift-title">Passeio de Barco</div>
+          <div class="gift-price">R$ 300,00</div>
+          <button class="gift-btn open-qr">Presentear</button>
+        </div>
+      </div>
+
+      <div class="gift-card">
+        <img src="https://plus.unsplash.com/premium_photo-1723867490491-10519f8ed969" alt="Dia de SPA">
+        <div class="gift-content">
+          <div class="gift-title">Dia de SPA</div>
+          <div class="gift-price">R$ 220,00</div>
+          <button class="gift-btn open-qr">Presentear</button>
+        </div>
+      </div>
+
+      <div class="gift-card">
+        <img src="https://images.unsplash.com/photo-1700893417209-18dc88c989a0" alt="Vinho especial">
+        <div class="gift-content">
+          <div class="gift-title">Garrafa de Vinho Especial</div>
+          <div class="gift-price">R$ 180,00</div>
+          <button class="gift-btn open-qr">Presentear</button>
+        </div>
+      </div>
+
+      <div class="gift-card">
+        <img src="https://images.unsplash.com/photo-1654808991961-141a731f55db" alt="Café da manhã especial">
+        <div class="gift-content">
+          <div class="gift-title">Café da Manhã Especial</div>
+          <div class="gift-price">R$ 120,00</div>
+          <button class="gift-btn open-qr">Presentear</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Modal QR Code -->
+  <div class="modal-backdrop" id="qrModal" aria-hidden="true">
+    <div class="modal">
+      <h3>Presente para os noivos</h3>
+      <p style="font-size:0.9rem;color:var(--muted)">Escaneie o QR Code para realizar sua contribuição.</p>
+      <img src="./assets/imagens/qr-code.jpeg" alt="QR Code" style="width:100%;max-width:260px;margin:14px auto;border-radius:12px;display:block" />
+      <button class="gift-btn" id="closeModal">Fechar</button>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
